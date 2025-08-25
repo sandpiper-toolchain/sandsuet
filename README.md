@@ -1,6 +1,9 @@
 # *sandsuet* data specification
 
-The sandsuet data specification gives a minimum set of criteria needed for rasterized geomorphology data to be immediately usable for analysis.
+**What is it?** The *sandsuet* data specification gives a minimum set of criteria needed for rasterized geomorphology data to be immediately usable for analysis.
+
+**How do I use it?** The specification should be applied data that have been checked for quality and potentially minimally processed. We recommend taking your model or experiment data and applying the *sandsuet* specification at the stage when you are about to begin analysis. 
+This way, your analysis derives from the same data you will share at publication!
 
 
 ## *sandsuet* v1.0
