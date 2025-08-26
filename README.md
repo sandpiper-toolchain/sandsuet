@@ -8,7 +8,7 @@ This way, your analysis derives from the same data you will share at publication
 
 ## *sandsuet* v1.0
 
-View a [DRAFT of the *sandsuet* v1.0 data specification here](https://drive.google.com/file/d/1GsPUNwWKP93473x97BE9P5jCowxWUs4H/view?usp=sharing) [PDF link].
+View a [DRAFT of the *sandsuet* v1.0 data specification here](https://drive.google.com/file/d/1BbZt5l6j2YFQTom29dZOuOuEZ2xaKXqi/view?usp=sharing) [PDF link].
 
 
 ## Examples
