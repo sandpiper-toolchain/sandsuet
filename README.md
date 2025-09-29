@@ -6,11 +6,11 @@
 This way, your analysis derives from the same data you will share at publication!
 
 
-## *sandsuet* v1.0
+## *sandsuet* v1.0.0
 
-View a [DRAFT of the *sandsuet* v1.0 data specification here](https://drive.google.com/file/d/1BbZt5l6j2YFQTom29dZOuOuEZ2xaKXqi/view?usp=sharing) [PDF link].
+View a [DRAFT of the *sandsuet* v1.0.0 data specification here](https://drive.google.com/file/d/1KCDU0gSv0DdjvCEGe_iy3NJ-y22pcOcD/view?usp=sharing) [PDF link].
 
 
 ## Examples
 
-Explore the [Google Colab notebook here](https://colab.research.google.com/drive/1WzITfkH0kAqAiYxe6xoxqaKDXBHKPiz7?usp=sharing) to see an example of data organized according to the *sandsuet* v1.0 data specification. 
+Explore the [Google Colab notebook here](https://colab.research.google.com/drive/1WzITfkH0kAqAiYxe6xoxqaKDXBHKPiz7?usp=sharing) to see an example of data organized according to the *sandsuet* v1.0.0 data specification. 
