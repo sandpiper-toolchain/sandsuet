@@ -1,0 +1,25 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: sandsuet
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Andrew J.
+    family-names: Moodie
+  - given-names: Eric
+    family-names: Barefoot
+  - given-names: Eric
+    family-names: Hutton
+  - given-names: Charles
+    family-names: Nguyen
+  - given-names: Andrew D.
+    family-names: Wickert
+  - given-names: Jeffrey
+    family-names: Marr
+repository-code: 'https://github.com/sandpiper-toolchain/sandsuet'
+license: MIT
+version: 1.0.0
