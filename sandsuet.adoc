@@ -2,7 +2,7 @@
 
 Analysis-ready Geomorphology Data Specification sandsuet
 
-**version** : v1.0.0 
+**version** : v0.0.1 
 // get version doc automatically somehow?
 
 == Specification
@@ -22,7 +22,7 @@ Analysis-ready Geomorphology Data Specification sandsuet
 
 
 . [[metadata-dataset]] The dataset shall have attributes briefly describing and contextualizing the underlying data; the only required metadata field is the ''sandsuet_version''.
-            footnote:[i.e., metadata. Metadata are information \textit{about} the dataset as a whole and/or individual variables. For example, date generated, author, DOI of an associated publication, variable units, or which instrument generated the variable data. The NetCDF attribute ``sandsuet_version'' shall be specified without preceding ''v'', e.g., 1.0.0.]
+            footnote:[I.e., metadata. Metadata are information _about_ the dataset as a whole and/or individual variables. For example, date generated, author, DOI of an associated publication, variable units, or which instrument generated the variable data. The NetCDF attribute ''sandsuet_version'' shall be specified without preceding ''v'', e.g., 1.0.0.]
 
 
 . Data dimensions shall be ordered according to the hierarchy: temporal > vertical spatial > horizontal spatial > horizontal spatial. If any dimensions are not present in the underlying data, that dimension is to be simply omitted. 
@@ -53,13 +53,13 @@ Analysis-ready Geomorphology Data Specification sandsuet
 . Variables shall be labeled with applicable coordinates.
     
     .. [[multi-coords]] Any number of coordinates can locate variables along the same data dimension.
-            footnote:[For example, if Sensor 1 data collected every 5 minutes, and Sensor 2 data collected every 20 minutes, each should have their own temporal dimension name and matching coordinate variable, and each should reference the same absolute time (e.g., elapsed time since beginning of experiment; Specification~<<consistent-units>>).]
+            footnote:[For example, if Sensor 1 data collected every 5 minutes, and Sensor 2 data collected every 20 minutes, each should have their own temporal dimension name and matching coordinate variable, and each should reference the same absolute time (e.g., elapsed time since beginning of experiment; Specification <<consistent-units>>).]
 
     .. [[consistent-units]] Variable units shall be  consistent across the dataset.
             footnote:[For example, if one spatial dimension has units of meters, additional spatial dimensions should also use meters, including when multiple dimension-coordinate pairs locate data along the same dimension. Derived variables, like velocity, should also then use meters, as meters per second. Consider applying the UDUNITS specification.]
             
     .. [[metadata-variables]] Variable attributes shall specify variable units and a description of the variable information.
-            footnote:[Consider the link:<https://scientificvariablesontology.org/>[Scientific Variables Ontology] for the NetCDF ''long_name'' variables attribute.]
+            footnote:[Consider the https://scientificvariablesontology.org/[Scientific Variables Ontology] for the NetCDF ''long_name'' variables attribute.]
             
     .. Variables shall have between zero and four dimensions (scalar up to time by three spatial dimensions).
         

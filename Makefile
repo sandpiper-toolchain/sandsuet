@@ -9,7 +9,7 @@ all: pdf
 pdf: $(PDF_OUTPUT)
 
 # pdf for sandsuet main document
-$(PDF_OUTPUT): 
+$(PDF_OUTPUT): $(ASCIIDOC_SOURCE)
 	asciidoctor-pdf --verbose -a pdf-theme=sandsuet-pdf-theme.yml $(ASCIIDOC_SOURCE)
 
 # clean rule
