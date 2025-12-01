@@ -1,31 +1,29 @@
-= sandsuet
+= sandsuet: analysis-ready geomorphology data specification
 
-Analysis-ready Geomorphology Data Specification sandsuet
-
-**version** : v0.0.1 
-// get version doc automatically somehow?
-
-== Specification
+include::attributes.adoc[]
 
 
-. The dataset shall be organized hierarchically.
+_version_ : {version}
+
+
+. [[hierarchical, Specification 1]] The dataset shall be organized hierarchically.
 
     .. The top level shall contain variables that (i) have the maximum number of dimensions in the dataset and (ii) make up the essential data that the creator intends to share for reuse.
         
     .. Lower levels, if present, shall contain data and information that reference and support the essential data variables, hereafter referred to as auxiliary data.
-            footnote:[Note, auxiliary data is distinct from metadata; see Specification <<metadata-dataset>> and <<metadata-variables>>]
+            footnote:[Note, auxiliary data is distinct from metadata; see <<metadata-dataset>> and <<metadata-variables>>.]
 
     .. Lower level group names are arbitrary.
 
 
-. All data shall be arranged in a rectilinear grid and projected.
+. [[rectilinear, Specification 2]] All data shall be arranged in a rectilinear grid and projected.
 
 
-. [[metadata-dataset]] The dataset shall have attributes briefly describing and contextualizing the underlying data; the only required metadata field is the ''sandsuet_version''.
+. [[metadata-dataset, Specification 3]] The dataset shall have attributes briefly describing and contextualizing the underlying data; the only required metadata field is the ''sandsuet_version''.
             footnote:[I.e., metadata. Metadata are information _about_ the dataset as a whole and/or individual variables. For example, date generated, author, DOI of an associated publication, variable units, or which instrument generated the variable data. The NetCDF attribute ''sandsuet_version'' shall be specified without preceding ''v'', e.g., 1.0.0.]
 
 
-. Data dimensions shall be ordered according to the hierarchy: temporal > vertical spatial > horizontal spatial > horizontal spatial. If any dimensions are not present in the underlying data, that dimension is to be simply omitted. 
+. [[dimensions-ordered, Specification 4]] Data dimensions shall be ordered according to the hierarchy: temporal > vertical spatial > horizontal spatial > horizontal spatial. If any dimensions are not present in the underlying data, that dimension is to be simply omitted. 
 
     .. Ordering of horizontal spatial dimensions is arbitrary. However, if spatial information represents real-world information, the north-south oriented dimension shall be ordered first (e.g., UTM Northing). 
 
@@ -37,10 +35,10 @@ Analysis-ready Geomorphology Data Specification sandsuet
             footnote:[Consider that descriptive dimension names are helpful. For example, a temporal dimension could be named ''elapsed seconds'', ''Date'', or ''Myr''.]
 
 
-. A coordinate variable shall be specified for each dimension represented in the dataset.
+. [[coordinates, Specification 5]] A coordinate variable shall be specified for each dimension represented in the dataset.
 
     .. Coordinate names shall match the corresponding dimension name exactly.
-            footnote:[This forms a dimension-coordinate pair that is essential for referencing data in absolute space and time, that is, in relation to other variables in the dataset (e.g., Specification <<multi-coords>>)]
+            footnote:[This forms a dimension-coordinate pair that is essential for referencing data in absolute space and time, that is, in relation to other variables in the dataset (e.g., <<multi-coords>>).]
 
     .. Coordinates shall provide specific rectifiable information to place the data along applicable dimensions.
 
@@ -50,15 +48,15 @@ Analysis-ready Geomorphology Data Specification sandsuet
             footnote:[For example, use elevation, rather than depth or two-way travel time for stratigraphic information.]
     
 
-. Variables shall be labeled with applicable coordinates.
+. [[variables, Specification 6]] Variables shall be labeled with applicable coordinates.
     
-    .. [[multi-coords]] Any number of coordinates can locate variables along the same data dimension.
-            footnote:[For example, if Sensor 1 data collected every 5 minutes, and Sensor 2 data collected every 20 minutes, each should have their own temporal dimension name and matching coordinate variable, and each should reference the same absolute time (e.g., elapsed time since beginning of experiment; Specification <<consistent-units>>).]
+    .. [[multi-coords, Specification 6a]] Any number of coordinates can locate variables along the same data dimension.
+            footnote:[For example, if Sensor 1 data collected every 5 minutes, and Sensor 2 data collected every 20 minutes, each should have their own temporal dimension name and matching coordinate variable, and each should reference the same absolute time (e.g., elapsed time since beginning of experiment; <<consistent-units>>).]
 
-    .. [[consistent-units]] Variable units shall be  consistent across the dataset.
+    .. [[consistent-units, Specification 6b]] Variable units shall be  consistent across the dataset.
             footnote:[For example, if one spatial dimension has units of meters, additional spatial dimensions should also use meters, including when multiple dimension-coordinate pairs locate data along the same dimension. Derived variables, like velocity, should also then use meters, as meters per second. Consider applying the UDUNITS specification.]
             
-    .. [[metadata-variables]] Variable attributes shall specify variable units and a description of the variable information.
+    .. [[metadata-variables, Specification 6c]] Variable attributes shall specify variable units and a description of the variable information.
             footnote:[Consider the https://scientificvariablesontology.org/[Scientific Variables Ontology] for the NetCDF ''long_name'' variables attribute.]
             
     .. Variables shall have between zero and four dimensions (scalar up to time by three spatial dimensions).
