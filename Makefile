@@ -3,7 +3,7 @@ PDF_OUTPUT = sandsuet.pdf
 ASCIIDOCTOR_PDF = asciidoctor-pdf
 
 # Default target
-all: pdf
+all: clean pdf
 
 # pdf rule
 pdf: $(PDF_OUTPUT)
