@@ -3,28 +3,43 @@ title: sandsuet
 message: >-
   If you use the data specification, please cite it using the
   metadata from this file.
-type: software
 authors:
-  - given-names: Andrew J.
-    family-names: Moodie
-  - given-names: Eric
-    family-names: Barefoot
-  - given-names: Eric
-    family-names: Hutton
-  - given-names: Charles
-    family-names: Nguyen
-  - given-names: Andrew D.
-    family-names: Wickert
-  - given-names: Jeffrey
-    family-names: Marr
-identifiers:
-  -
-    type: doi
-    value: 10.5194/egusphere-2025-4770
-    description: >-
-      "Short Communication: The need for open-source hardware, software,
-      and data-sharing specifications in geomorphology". 
-      Earth Surface Dynamics, Preprint.
+    - given-names: Andrew J.
+      family-names: Moodie
+    - given-names: Eric
+      family-names: Barefoot
+    - given-names: Eric
+      family-names: Hutton
+    - given-names: Charles
+      family-names: Nguyen
+    - given-names: Andrew D.
+      family-names: Wickert
+    - given-names: Jeffrey
+      family-names: Marr
+doi: 10.5281/zenodo.17727099  # resolves to latest version
 repository-code: 'https://github.com/sandpiper-toolchain/sandsuet'
 license: MIT
 version: 1.0.0
+preferred-citation:
+  type: article
+  authors:
+    - given-names: Andrew J.
+      family-names: Moodie
+    - given-names: Eric
+      family-names: Barefoot
+    - given-names: Eric
+      family-names: Hutton
+    - given-names: Charles
+      family-names: Nguyen
+    - given-names: Andrew D.
+      family-names: Wickert
+    - given-names: Jeffrey
+      family-names: Marr
+  doi: "10.5194/egusphere-2025-4770"
+  journal: "Earth Surface Dynamics"
+  title: >-
+    "Short Communication: The need for open-source hardware, software,
+    and data-sharing specifications in geomorphology"
+  year: 2025
+  note: preprint
+
