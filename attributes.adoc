@@ -1,3 +1,0 @@
-:author: sandsuet contributors
-:version: 1.0.0
-:project-name: sandsuet: analysis-ready geomorphology sata specification
