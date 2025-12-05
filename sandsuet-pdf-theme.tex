@@ -444,36 +444,13 @@ $endif$
 $endif$
   pdfcreator={LaTeX via pandoc}}
 
-$if(title)$
-\title{$title$$if(thanks)$\thanks{$thanks$}$endif$}
-$endif$
-$if(subtitle)$
-$if(beamer)$
-$else$
-\usepackage{etoolbox}
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
-\makeatother
-$endif$
-\subtitle{$subtitle$}
-$endif$
-\author{$for(author)$$author$$sep$ \and $endfor$}
+%% TITLE AND HEADER modified for sandsuet needs
+%  must always have title argument and never authors argument
+\title{$title$}%
+% always display the version and the date
 \date{$date$}
-$if(beamer)$
-$if(institute)$
-\institute{$for(institute)$$institute$$sep$ \and $endfor$}
-$endif$
-$if(titlegraphic)$
-\titlegraphic{\includegraphics{$titlegraphic$}}
-$endif$
-$if(logo)$
-\logo{\includegraphics{$logo$}}
-$endif$
-$endif$
 
-%% CHANGES MADE TO TEMPLATE FOR SANDSUET HERE
+%% PACKAGES FOR SANDSUET HERE
 \usepackage{geometry}
 \geometry{margin=0.75in}
 
@@ -482,25 +459,33 @@ $endif$
 
 \usepackage{titlesec}
 \titleformat*{\section}{\large\bfseries}
-
 %%
 
+%% CUSTOM HEADER FOR SANDSUET HERE
+\makeatletter
+\renewcommand{\@maketitle}{%
+  \newpage%
+  % \begingroup
+  \begin{center}%
+  \setlength{\tabcolsep}{4em}
+    {\fontseries{b}\selectfont\@title}% require title
+    \vskip 0.0ex%
+    \begin{tabular}[t]{c c}%
+      \textit{version:} v$sandsuetversion$ & \today
+    \end{tabular}%
+  \end{center}%
+  \vspace{\dimexpr-1\parskip\relax}%
+  \rule[1ex]{\textwidth}{0.5pt}%
+}
+\makeatother
+%% 
+
 \begin{document}
-$if(has-frontmatter)$
-\frontmatter
-$endif$
-$if(title)$
-$if(beamer)$
-\frame{\titlepage}
-$else$
+
 \maketitle
-$endif$
-$if(abstract)$
-\begin{abstract}
-$abstract$
-\end{abstract}
-$endif$
-$endif$
+
+
+
 
 $for(include-before)$
 $include-before$

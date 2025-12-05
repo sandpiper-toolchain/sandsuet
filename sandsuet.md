@@ -1,4 +1,7 @@
-# sandsuet: analysis-ready geomorphology data specification --- v0.0.1
+---
+header-includes:
+  - \newcommand{\sandsuetversion}{$sandsuetversion$}
+---
 
 1. The dataset shall be organized hierarchically.
 

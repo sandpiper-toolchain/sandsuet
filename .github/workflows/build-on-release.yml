@@ -1,0 +1,28 @@
+name: Build Document on Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build_pdf:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install LaTeX and Pandoc dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y texlive-full pandoc
+
+      - name: Run Makefile to build PDF
+        run: make all
+
+      - name: Upload Document Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: sandsuet-document-release
+          path: sandsuet.pdf
+          retention-days: 90
