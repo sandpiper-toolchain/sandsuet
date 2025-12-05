@@ -1,7 +1,9 @@
 1. The dataset shall be organized hierarchically.
 
     a. The top level shall contain variables that (i) have the maximum number of dimensions in the dataset and (ii) make up the essential data that the creator intends to share for reuse.
+
     b. Lower levels, if present, shall contain data and information that reference and support the essential data variables, hereafter referred to as auxiliary data.[^1]
+    
     c. Lower level group names are arbitrary.
 
 
