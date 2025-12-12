@@ -15,7 +15,7 @@ jobs:
       - name: Install LaTeX and Pandoc dependencies
         run: |
           sudo apt-get update
-          sudo apt-get install -y texlive-full pandoc
+          sudo apt-get install -y latexmk texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended dvipng pandoc
 
       - name: Run Makefile to build PDF
         run: make all
