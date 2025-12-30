@@ -8,9 +8,21 @@ This way, your analysis derives from the same data you will share at publication
 
 ## *sandsuet* v1.0.0
 
-View a [DRAFT of the *sandsuet* v1.0.0 data specification here (Page 9)](https://egusphere.copernicus.org/preprints/2025/egusphere-2025-4770/egusphere-2025-4770.pdf) [PDF link].
+View the [*sandsuet* v1.0.0 data specification here](https://zenodo.org/records/17884433/files/sandsuet_v1.0.0.pdf?download=1) [PDF link].
+
+
+
+* The latest release of sandsuet is always archived on Zenodo here: [https://doi.org/10.5281/zenodo.17727099](https://doi.org/10.5281/zenodo.17727099).
+* The latest development version of sandsuet can be viewed in Markdown format in this repository [here](sandsuet.md). 
 
 
 ## Examples
 
-Explore the [Google Colab notebook here](https://colab.research.google.com/drive/1WzITfkH0kAqAiYxe6xoxqaKDXBHKPiz7?usp=sharing) to see an example of data organized according to the *sandsuet* v1.0.0 data specification. 
+### Formatting data in the *sandsuet* specification
+
+* View an [example script](examples/example_python_fakedata.py) demonstrating how to format an arbitrary numpy array into a NetCDF file
+
+### Working with sandsuet data
+
+* Explore the [Google Colab notebook here](https://colab.research.google.com/drive/1WzITfkH0kAqAiYxe6xoxqaKDXBHKPiz7?usp=sharing) to see an example of data organized according to the *sandsuet* v1.0.0 data specification.
+* The [*sandplover* software](https://github.com/sandpiper-toolchain/sandplover) is designed to work especially well with *sandsuet* data, and there are many helpful examples of working with that package in [the *sandplover* documentation](https://sandpiper-toolchain.org/sandplover/index.html).
