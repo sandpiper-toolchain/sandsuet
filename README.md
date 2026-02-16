@@ -6,14 +6,18 @@
 This way, your analysis derives from the same data you will share at publication!
 
 
+
 ## *sandsuet* v1.0.0
 
 View the [*sandsuet* v1.0.0 data specification here](https://zenodo.org/records/17884433/files/sandsuet_v1.0.0.pdf?download=1) [PDF link].
 
-
-
 * The latest release of sandsuet is always archived on Zenodo here: [https://doi.org/10.5281/zenodo.17727099](https://doi.org/10.5281/zenodo.17727099).
 * The latest development version of sandsuet can be viewed in Markdown format in this repository [here](sandsuet.md). 
+
+[A full article about sandsuet, and the larger sandpiper project, was published in ESurf in 2026.](https://doi.org/10.5194/esurf-14-85-2026)
+
+![sandsuet_schematic](https://esurf.copernicus.org/articles/14/85/2026/esurf-14-85-2026-f01-web.png)
+
 
 
 ## Examples
