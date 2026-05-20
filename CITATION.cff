@@ -4,42 +4,42 @@ message: >-
   If you use the data specification, please cite it using the
   metadata from this file.
 authors:
-    - given-names: Andrew J.
-      family-names: Moodie
-    - given-names: Eric
-      family-names: Barefoot
-    - given-names: Eric
-      family-names: Hutton
-    - given-names: Charles
-      family-names: Nguyen
-    - given-names: Andrew D.
-      family-names: Wickert
-    - given-names: Jeffrey
-      family-names: Marr
+    - given-names: "Andrew J."
+      family-names: "Moodie"
+    - given-names: "Eric"
+      family-names: "Barefoot"
+    - given-names: "Eric"
+      family-names: "Hutton"
+    - given-names: "Charles"
+      family-names: "Nguyen"
+    - given-names: "Andrew D."
+      family-names: "Wickert"
+    - given-names: "Jeffrey"
+      family-names: "Marr"
 doi: 10.5281/zenodo.17727099  # resolves to latest version
-repository-code: 'https://github.com/sandpiper-toolchain/sandsuet'
-license: MIT
+repository-code: "https://github.com/sandpiper-toolchain/sandsuet"
+license: "MIT"
 version: 1.0.0
 preferred-citation:
   type: article
   authors:
-    - given-names: Andrew J.
-      family-names: Moodie
-    - given-names: Eric
-      family-names: Barefoot
-    - given-names: Eric
-      family-names: Hutton
-    - given-names: Charles
-      family-names: Nguyen
-    - given-names: Andrew D.
-      family-names: Wickert
-    - given-names: Jeffrey
-      family-names: Marr
-  doi: "10.5194/egusphere-2025-4770"
+    - given-names: "Andrew J."
+      family-names: "Moodie"
+    - given-names: "Eric"
+      family-names: "Barefoot"
+    - given-names: "Eric"
+      family-names: "Hutton"
+    - given-names: "Charles"
+      family-names: "Nguyen"
+    - given-names: "Andrew D."
+      family-names: "Wickert"
+    - given-names: "Jeffrey"
+      family-names: "Marr"
+  doi: "10.5194/esurf-14-85-2026"
   journal: "Earth Surface Dynamics"
   title: >-
     "Short Communication: The need for open-source hardware, software,
     and data-sharing specifications in geomorphology"
-  year: 2025
-  note: preprint
-
+  year: 2026
+  volume: 14
+  url: "https://esurf.copernicus.org/articles/14/85/2026/"
