@@ -24,7 +24,8 @@ View the [*sandsuet* v1.0.0 data specification here](https://zenodo.org/records/
 
 ### Formatting data in the *sandsuet* specification
 
-* View an [example script](examples/example_python_fakedata.py) demonstrating how to format an arbitrary numpy array into a NetCDF file
+* [`render`](https://github.com/sandpiper-toolchain/render) is a collection of examples, tools, and scripts to help format data into a NetCDF file
+* [sandsuet-checker](https://github.com/sandpiper-toolchain/sandsuet-checker) is a command-line utility for checking dataset sandsuet compliance
 
 ### Working with sandsuet data
 
